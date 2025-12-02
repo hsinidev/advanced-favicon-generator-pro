@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Favicon Generator | Convert Image, Text & Emoji to ICO - doodax.com</title>
+    <meta name="description" content="The ultimate free Favicon Generator. Create professional favicons from images, text, or emojis. Download ICO, PNG, and SVG formats. Privacy-focused, client-side tool powered by doodax.com.">
+    <meta name="keywords" content="favicon generator, create favicon, image to ico, text to favicon, emoji favicon, favicon.ico generator, free icon tool, website branding, pwa icon generator, doodax">
+    <meta name="author" content="HSINI MOHAMED">
+    <link rel="canonical" href="https://doodax.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://doodax.com/">
+    <meta property="og:title" content="Advanced Favicon Generator | Create Favicons from Image, Text & Emoji">
+    <meta property="og:description" content="Generate pixel-perfect favicons in seconds. Privacy-first, client-side processing. Powered by HSINI MOHAMED.">
+    <meta property="og:image" content="https://doodax.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://doodax.com/">
+    <meta property="twitter:title" content="Advanced Favicon Generator">
+    <meta property="twitter:description" content="Generate pixel-perfect favicons in seconds. No upload required.">
+    <meta property="twitter:image" content="https://doodax.com/og-image.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/typography@0.5.x/dist/typography.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                color: '#9ca3af',
+                                h1: { color: '#f3f4f6' },
+                                h2: { color: '#f3f4f6' },
+                                h3: { color: '#f3f4f6' },
+                                h4: { color: '#f3f4f6' },
+                                strong: { color: '#f3f4f6' },
+                                a: { color: '#60a5fa' },
+                            },
+                        },
+                    },
+                },
+            },
+            plugins: [
+                function({ addUtilities }) {
+                    addUtilities({
+                        '.line-clamp-2': {
+                            overflow: 'hidden',
+                            display: '-webkit-box',
+                            '-webkit-box-orient': 'vertical',
+                            '-webkit-line-clamp': '2',
+                        }
+                    })
+                }
+            ]
+        }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #050505;
+        color: #e5e7eb;
+        overflow-x: hidden;
+      }
+      
+      /* Multi-colored Galaxy Background */
+      .galaxy-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: radial-gradient(ellipse at bottom, #0f172a 0%, #000000 100%);
+        overflow: hidden;
+      }
+
+      .nebula-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            radial-gradient(circle at 20% 30%, rgba(76, 29, 149, 0.15), transparent 40%),
+            radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.15), transparent 40%),
+            radial-gradient(circle at 40% 80%, rgba(236, 72, 153, 0.1), transparent 40%),
+            radial-gradient(circle at 90% 90%, rgba(16, 185, 129, 0.05), transparent 40%);
+        filter: blur(40px);
+        animation: nebula-pulse 20s ease-in-out infinite alternate;
+      }
+
+      .star-layer-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(white 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.1;
+        animation: stars-move 100s linear infinite;
+      }
+
+      .star-layer-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(white 2px, transparent 2px);
+        background-size: 100px 100px;
+        opacity: 0.15;
+        animation: stars-move 150s linear infinite reverse;
+      }
+
+      @keyframes nebula-pulse {
+        0% { opacity: 0.5; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.1); }
+        100% { opacity: 0.5; transform: scale(1); }
+      }
+
+      @keyframes stars-move {
+        from { transform: translateY(0); }
+        to { transform: translateY(-100%); }
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+
+      .image-pixelated {
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+      }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Advanced Favicon Generator",
+          "url": "https://doodax.com/",
+          "description": "The ultimate free tool to generate favicons for your next project from text, image, or emoji.",
+          "author": {
+            "@type": "Person",
+            "name": "HSINI MOHAMED",
+            "url": "https://github.com/hsinidev"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+            "@type": "SoftwareApplication",
+            "name": "Favicon Generator",
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "Web",
+            "url": "https://doodax.com",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why do I need a favicon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Favicons improve user experience by helping users identify your site in tabs and bookmarks."
+              }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this tool free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Advanced Favicon Generator is 100% free and processes images locally in your browser."
+                }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="galaxy-background">
+        <div class="nebula-layer"></div>
+        <div class="star-layer-1"></div>
+        <div class="star-layer-2"></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
