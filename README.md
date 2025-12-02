@@ -10,7 +10,7 @@
 ## 🚀 Live Demo
 
 **Experience the application live:**  
-👉 **[doodax.com](https://doodax.com)**
+👉 **[doodax.com](https://doodax.com/tools/advanced-favicon-generator/index.html)**
 
 ---
 
