@@ -1,0 +1,1 @@
+# advanced-favicon-generator-pro
